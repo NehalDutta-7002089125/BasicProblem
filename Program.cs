@@ -1,28 +1,32 @@
 ﻿using System;
 
-namespace UC_6_EvenorOdd
+namespace uc9_Vowel
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a Number: ");
+            Console.WriteLine("Enter an Alphabet");
 
-              int n = int.Parse(Console.ReadLine());
+            char c = Convert.ToChar(Console.ReadLine());
 
-            if (n %2 == 0)
-
+            switch (c)
             {
+                case 'a':
+               case 'e':
+                 case 'i':
+                case 'o':
+                case 'u':
 
-                Console.WriteLine(n+ " is a Even Number.");
+                    Console.WriteLine(c+ " is a vowel");
 
-            }
-            else
+                    break;
 
-            {
+                default:
 
-                Console.WriteLine(n+ " is a Odd Number.");
+                    Console.WriteLine(c+ " is a consonant");
 
+                    break;
             }
         }
     }
