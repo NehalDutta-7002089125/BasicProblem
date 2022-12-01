@@ -1,21 +1,24 @@
 ﻿using System;
 
-namespace UC_2_Leapyear
+namespace Powerof2
 {
-    internal class Leapyear
+    internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the year");
-            int year = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter a number");
+            int num = Convert.ToInt32(Console.ReadLine());
 
-            if ((year%4 == 0) && (year%100!= 0) || (year%400 == 0))
+            if (num >= 0 && num <= 40)
             {
-                Console.WriteLine(year +" is a leap year ");
+                for (int i = 0; i < num; i++)
+                {
+                    Console.WriteLine(Math.Pow(i, 2));
+                }
             }
             else
             {
-                Console.WriteLine(year + "is not a leap year");
+                Console.WriteLine("Enter the number betwwen 2 to 40");
             }
         }
     }
