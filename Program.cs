@@ -1,23 +1,27 @@
 ﻿using System;
 
-namespace UC_4_harmonicNo
+namespace UC5_Factorial
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int i, num;
+            int fact =1;
 
-            Console.WriteLine("Enter a number:");
+            Console.WriteLine("Enter a number");
 
-            num = Convert.ToInt32(Console.ReadLine());
 
-            for (i = 1; i <= num; i++)
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            for (int i=1; i<= num; i++)
 
             {
-                Console.Write("1/{0}+", i);
+
+                fact = fact * i;
 
             }
+
+            Console.WriteLine("Factorial of" + num + "is" + fact);
         }
     }
 }
