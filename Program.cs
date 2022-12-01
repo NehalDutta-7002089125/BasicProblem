@@ -1,44 +1,28 @@
 ﻿using System;
 
-namespace UC_10_LargestNumber
+namespace uc7_SwappingNo
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1st number:");
+           int a, b, temp;
 
-            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter first number: ");
 
-            Console.WriteLine("Enter the 2nd number:");
+             a = int.Parse(Console.ReadLine());
 
-            int num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number: ");
 
-            Console.WriteLine("Enter the 3rd number:");
+            b = int.Parse(Console.ReadLine());
 
-            int num3 = Convert.ToInt32(Console.ReadLine());
+            temp = a;
 
-            if (num1 > num2)
-            {
+            a = b;
 
-                if (num1 > num3)
-                {
-                    Console.WriteLine(num1 + " is the gratest among three");
-                }
-                else
-                {
-                    Console.WriteLine(num3 + " is the gratest among three");
-                }
-            }
+            b = temp;
 
-            if (num2 > num3)
-            {
-                Console.WriteLine(num2 + " is the gratest among three");
-            }
-            else
-            {
-                Console.WriteLine(num3 + " is the gratest among three");
-            }
+            Console.WriteLine("After swapping {0},{1}", a, b);
         }
     }
 }
