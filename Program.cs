@@ -41,9 +41,9 @@ namespace UC_1_Flipcoin
 
                 Tper = TC * 100 / Flips;
 
-                Console.WriteLine("headpercentage" + Tper);
+                Console.WriteLine("Hper" + Tper);
 
-                Console.WriteLine("tailpercentage" + Hper);
+                Console.WriteLine("Tper" + Hper);
             }
         }
     }
