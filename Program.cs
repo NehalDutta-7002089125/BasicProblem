@@ -1,24 +1,22 @@
 ﻿using System;
 
-namespace Powerof2
+namespace UC_4_harmonicNo
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number");
-            int num = Convert.ToInt32(Console.ReadLine());
+            int i, num;
 
-            if (num >= 0 && num <= 40)
+            Console.WriteLine("Enter a number:");
+
+            num = Convert.ToInt32(Console.ReadLine());
+
+            for (i = 1; i <= num; i++)
+
             {
-                for (int i = 0; i < num; i++)
-                {
-                    Console.WriteLine(Math.Pow(i, 2));
-                }
-            }
-            else
-            {
-                Console.WriteLine("Enter the number betwwen 2 to 40");
+                Console.Write("1/{0}+", i);
+
             }
         }
     }
