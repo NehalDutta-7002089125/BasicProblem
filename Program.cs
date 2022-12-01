@@ -1,23 +1,29 @@
 ﻿using System;
 
-namespace UC_6_RemainderQuotient
+namespace UC_6_EvenorOdd
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter a Number: ");
 
-            int Dividend = 22, Divisor = 2;
+              int n = int.Parse(Console.ReadLine());
 
-               int Quotient = Dividend / Divisor;
+            if (n %2 == 0)
 
-          int Remainder = Dividend % Divisor;
+            {
 
-            Console.WriteLine("Dividend: {0} Divisor:{1}", Dividend, Divisor);
+                Console.WriteLine(n+ " is a Even Number.");
 
-         Console.WriteLine("Qotient = " + Quotient);
-              
-                Console.WriteLine("Remainder = " + Remainder);
+            }
+            else
+
+            {
+
+                Console.WriteLine(n+ " is a Odd Number.");
+
+            }
         }
     }
 }
