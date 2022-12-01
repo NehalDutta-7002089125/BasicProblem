@@ -1,27 +1,23 @@
 ﻿using System;
 
-namespace UC5_Factorial
+namespace UC_6_RemainderQuotient
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int fact =1;
 
-            Console.WriteLine("Enter a number");
+            int Dividend = 22, Divisor = 2;
 
+               int Quotient = Dividend / Divisor;
 
-            int num = Convert.ToInt32(Console.ReadLine());
+          int Remainder = Dividend % Divisor;
 
-            for (int i=1; i<= num; i++)
+            Console.WriteLine("Dividend: {0} Divisor:{1}", Dividend, Divisor);
 
-            {
-
-                fact = fact * i;
-
-            }
-
-            Console.WriteLine("Factorial of" + num + "is" + fact);
+         Console.WriteLine("Qotient = " + Quotient);
+              
+                Console.WriteLine("Remainder = " + Remainder);
         }
     }
 }
