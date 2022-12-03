@@ -6,9 +6,6 @@ namespace Powerof2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number");
-            int num = Convert.ToInt32(Console.ReadLine());
-
             int n;
             
             Console.WriteLine("Give the Exponent");
@@ -18,7 +15,7 @@ namespace Powerof2
             double value = Math.Pow(2, n);
             
             Console.WriteLine("Result is : " + value);
-            }
-        }
+          }
+        
     }
 }
