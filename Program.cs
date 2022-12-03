@@ -9,7 +9,7 @@ namespace UC_2_Leapyear
             Console.WriteLine("Enter the year");
             int year = Convert.ToInt32(Console.ReadLine());
 
-            if ((year%4 == 0) && (year%100!= 0) || (year%400 == 0))
+            if ((year % 4 == 0) 
             {
                 Console.WriteLine(year +" is a leap year ");
             }
