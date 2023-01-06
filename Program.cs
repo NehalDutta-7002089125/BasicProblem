@@ -6,9 +6,9 @@ namespace UC_1_Flipcoin
     {
         static void Main(string[] args)
         {
-            int HC = 0;
+            int HeadCount = 0;
 
-            int TC = 0;
+            int TossCount = 0;
 
             double Hper = 0;
 
@@ -30,16 +30,16 @@ namespace UC_1_Flipcoin
 
                     if (number == 0)
                     {
-                        TC++;
+                        TossCount++;
                     }
                     else
                     {
-                        HC++;
+                        HeadCount++;
                     }
                 }
-                Hper = HC * 100 / Flips;
+                Hper = HeadCount * 100 / Flips;
 
-                Tper = TC * 100 / Flips;
+                Tper = TossCount * 100 / Flips;
 
                 Console.WriteLine("Hper" + Tper);
 
