@@ -11,7 +11,7 @@ namespace UC_2_Leapyear
 
             if ((year % 4 == 0) 
             {
-                Console.WriteLine(year +" is a leap year ");
+                Console.WriteLine(year +" is a leap year");
             }
             else
             {
